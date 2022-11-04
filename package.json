@@ -1,6 +1,6 @@
 {
   "name": "cm_plugin_dropdown",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "simple react dropdown",
   "author": "Cédric Michel",
   "license": "MIT",
