@@ -1,6 +1,6 @@
 {
   "name": "cm_plugin_dropdown",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "simple react dropdown",
   "author": "cmswa",
   "license": "MIT",
@@ -24,7 +24,9 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -49,9 +51,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0"
-  }
+  ]
 }

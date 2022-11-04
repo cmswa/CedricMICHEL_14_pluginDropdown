@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSortDown, faSortUp } from '@fortawesome/free-solid-svg-icons'
-import './styles.module.css'
+import styles from './styles.module.css'
 
 export const Dropdown = ({ list, setValue }) => {
   const [open, setOpen] = useState(false)
@@ -34,14 +34,14 @@ export const Dropdown = ({ list, setValue }) => {
   }
 
   return (
-    <div className='dropdown' onClick={toogleDropdown}>
-      <div className='list'>
-        <div className='list_el'>{selectedValue}</div>
+    <div className={styles.dropdown} onClick={toogleDropdown}>
+      <div className={styles.list}>
+        <div className={styles.list_el}>{selectedValue}</div>
         {open && (
-          <ul className='listUl'>
+          <ul className={styles.listUl}>
             {data.map((data) => (
               <li
-                className='listLi'
+                className={styles.listLi}
                 key={data.index}
                 onClick={() => selectLi(data)}
               >
@@ -52,9 +52,17 @@ export const Dropdown = ({ list, setValue }) => {
         )}
       </div>
       {open ? (
-        <FontAwesomeIcon className='arrow' icon={faSortUp} alt='up arrow' />
+        <FontAwesomeIcon
+          className={styles.arrow}
+          icon={faSortUp}
+          alt='up arrow'
+        />
       ) : (
-        <FontAwesomeIcon className='arrow' icon={faSortDown} alt='down arrow' />
+        <FontAwesomeIcon
+          className={styles.arrow}
+          icon={faSortDown}
+          alt='down arrow'
+        />
       )}
     </div>
   )
