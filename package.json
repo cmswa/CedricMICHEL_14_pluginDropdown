@@ -1,10 +1,10 @@
 {
   "name": "cm_plugin_dropdown",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "simple react dropdown",
-  "author": "cmswa",
+  "author": "Cédric Michel",
   "license": "MIT",
-  "repository": "cmswa/cm-plugin-dropdown--",
+  "repository": "cmswa/CedricMICHEL_14_pluginDropdown",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
